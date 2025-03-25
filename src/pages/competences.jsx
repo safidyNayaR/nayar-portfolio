@@ -1,5 +1,3 @@
-import Techno from "../components/techno"
-
 export default function Competences() {
     return(
         <div className="text-white text-center my-4" id="competences">
@@ -45,6 +43,15 @@ export default function Competences() {
                     <Techno image="./images/bootstrap.png" />
                 </div>
             </div>
+        </div>
+    )
+}
+
+function Techno(props) {
+    const {image} = props
+    return(
+        <div className="col-2">
+            <img src={image} alt={image} className="techno-image"/>
         </div>
     )
 }
